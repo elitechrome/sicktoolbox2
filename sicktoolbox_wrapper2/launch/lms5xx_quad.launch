@@ -1,0 +1,19 @@
+<launch>
+  <node pkg="sicktoolbox_wrapper2" name="lms5xx_1" type="sicklms_5xx_re" ns="lidar1">
+    <param name="ip_add" value="192.168.0.71" />
+    <param name="frame_id" value="laser" />
+  </node>
+  <node pkg="sicktoolbox_wrapper2" name="lms5xx_2" type="sicklms_5xx_re" ns="lidar2">
+    <param name="ip_add" value="192.168.0.72" />
+    <param name="frame_id" value="laser" />
+    <param name="slam_flag" value="true" />
+  </node>
+  <node pkg="sicktoolbox_wrapper2" name="lms5xx_3" type="sicklms_5xx_re" ns="lidar3">
+    <param name="ip_add" value="192.168.0.73" />
+    <param name="frame_id" value="laser" />
+  </node>
+  <node pkg="sicktoolbox_wrapper2" name="lms5xx_4" type="sicklms_5xx_re" ns="lidar4">
+    <param name="ip_add" value="192.168.0.74" />
+    <param name="frame_id" value="laser" />
+  </node>
+</launch>
